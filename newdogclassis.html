@@ -1,0 +1,49 @@
+a<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Labrador </title>
+</head>
+
+<body>
+    <script>
+        class Dog {
+            constructor(name) {
+                this.name = name;
+            }
+
+            speak() {
+                return "woof";
+            }
+
+        }
+
+        class Labrador extends Dog {
+            constructor(name, breedWeight) {
+                super(name);
+
+                this.breedWeight = breedWeight;
+            }
+
+            speak() {
+                return "Labrador says woof";
+            }
+        }
+
+        var l1 = new Labrador('jimmy tiger', 10);
+        var l2 = new Labrador('hulk', 20);
+        console.log(l1.speak());
+        console.log(l1.name);
+
+        console.log(l1.breedWeight);
+        console.log(l2.speak());
+        console.log(l2.name);
+
+        console.log(l2.breedWeight);
+    </script>
+</body>
+
+</html>
